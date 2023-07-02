@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper & Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:ital,wght@0,200;0,500;0,600;1,200&family=Ysabeau+Office:ital,wght@0,100;0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper & Scissors</h1>
+      <button class="btn btn-play">Play</button>
+      <div class="game-content hidden">
+        <div class="choices">
+          <div class="player">
+            <p class="player-choice"></p>
+            <p class="label hidden">Player</p>
+          </div>
+          <div class="comp">
+            <p class="comp-choice"></p>
+            <p class="label hidden">Computer</p>
+          </div>
+        </div>
+        <h3>Choose:</h3>
+        <div class="buttons">
+          <button class="btn choice btn-rock" id="rock">Rock</button>
+          <button class="btn choice btn-paper" id="paper">Paper</button>
+          <button class="btn choice btn-scissors" id="scissors">
+            Scissors
+          </button>
+        </div>
+
+        <h2 class="round-winner"></h2>
+        <h3>Points</h3>
+        <div class="points">
+          <p class="player-points">Player: 0</p>
+          <p class="comp-points">Computer: 0</p>
+        </div>
+        <h4 class="turns">Turns remaining : 5</h4>
+      </div>
+      <h1 class="winner hidden">Winner:</h1>
+      <button class="btn btn-play-again hidden">Restart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+:root {
+  --color-cyan: rgba(127, 254, 234, 1);
+  --color-yellow: rgba(245, 251, 129, 1);
+  --color-pink: rgba(224, 74, 177, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Caprasimo", cursive;
+  font-size: 2rem;
+  font-weight: 200;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(
+    90deg,
+    rgba(127, 254, 234, 1) 0%,
+    rgba(245, 251, 129, 1) 50%,
+    rgba(224, 74, 177, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(240, 248, 255, 0.66);
+  border-radius: 30px;
+  padding: 5rem;
+  display: grid;
+  row-gap: 2rem;
+  justify-items: center;
+  position: relative;
+  min-height: 30vh;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  font-family: inherit;
+  border-radius: 3px;
+  font-size: inherit;
+  top: 15rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.btn-play {
+  padding: 1rem 2rem;
+  border: none;
+  background-image: linear-gradient(
+    90deg,
+    rgba(127, 254, 234, 1) 0%,
+    rgba(245, 251, 129, 1) 50%,
+    rgba(224, 74, 177, 1) 100%
+  );
+  font-family: inherit;
+  border-radius: 3px;
+  font-size: inherit;
+  position: absolute;
+  top: 15rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.btn-rock {
+  background-color: var(--color-cyan);
+}
+
+.btn-paper {
+  background-color: var(--color-yellow);
+}
+
+.btn-scissors {
+  background-color: var(--color-pink);
+}
+
+.game-content {
+  display: grid;
+  justify-items: center;
+  row-gap: 3rem;
+}
+
+.btn-play-again {
+  background-image: linear-gradient(
+    90deg,
+    rgba(127, 254, 234, 1) 0%,
+    rgba(245, 251, 129, 1) 50%,
+    rgba(224, 74, 177, 1) 100%
+  );
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: space-between;
+  column-gap: 2rem;
+}
+
+.player,
+.comp {
+  font-family: "Ysabeau Office", sans-serif;
+  font-weight: 300;
+  display: grid;
+  justify-items: center;
+}
+
+.points {
+  font-family: "Ysabeau Office", sans-serif;
+  font-weight: 300;
+  display: flex;
+  gap: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.label {
+  font-family: "Caprasimo", cursive;
+}
